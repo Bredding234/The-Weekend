@@ -1,0 +1,196 @@
+<html>
+
+<body>
+
+	<meta charset="UTF-8">
+    <title>Document</title>
+    
+	<style>
+		.rte .page-description {
+	text-align: center;
+}
+.rte .page-content {
+	display: flex;
+	justify-content: center;
+}
+.page-content .img-contain {
+	max-width: 400px;
+	padding: 10px;
+	width: 100%;
+}
+.page-content .img-contain img {
+	width: 100%;
+}
+.page-content .img-contain{
+    position: relative;
+    width: 275px;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.page-content .img-contain:hover
+{
+    z-index: 1;
+    transform: scale(1.0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    background: linear-gradient(150deg, #f00, #000);
+
+}
+.page-description .page-content .img-contain:before
+{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   background: linear-gradient(180deg, #f00, #000);
+   mix-blend-mode: multiply;
+   opacity: 0;
+   transition: 0.5s;
+}
+.page-description .page-content .img-contain img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+.features{
+    display: flex;
+    margin-left: 2rem;
+}
+
+
+
+/* image four  */
+
+.overlay4{
+    position: absolute;
+    top: 11px;
+    left: 65px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    height: 350px;
+    width: 400px;
+    transition: opacity 0.4s ease-in-out;
+    background: silver;
+    cursor: pointer;
+
+}
+
+.content4{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: verdana;
+    text-align: center;
+}
+.feature1{
+    position: relative;
+     top: 1px;
+      margin-left: -1em; 
+}
+.feature1:hover .overlay4{
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+	</style>
+
+
+	<div class="rte">
+        <h2 class="section-middle">FEATURED RELEASES</h2>
+
+		<div class="page-content">
+			<div class="img-contain">
+             <a href="https://www.theweeknd.com/news/weeknd-first-artist-sweep-awards-artist-album-single-and-songwriter-year-twice">  <img src="https://cdn.shopify.com/s/files/1/0639/7575/1930/files/news1_480x480.jpg?v=1649985196" alt=""></a> 
+                <div class="overlay">
+                    <div class="content">
+                        <a href="http://theweeknd.co/dawnfmWE"  style="    text-decoration: none;    "><h1> Listen </h1></a>
+                    </div>
+                    <h1> Read News </h1>
+                </div>
+				<p>The first artist to sweep the awards for artist, album, single and songwriter of the year in the juno AWARDS 2021.</p>
+			</div>
+			<div class="img-contain">
+			<a href="https://www.theweeknd.com/news/weeknd-wins-top-artist-billboard-music-awards-2021">	<img src="https://cdn.shopify.com/s/files/1/0639/7575/1930/files/news2_480x480.jpg?v=1649996088" alt=""> </a>
+				<p>THE WEEKND WINS TOP ARTIST AT THE BILLBOARD MUSIC AWARDS 2021.</p>
+			</div>
+			<div class="img-contain">
+			<a href="https://www.theweeknd.com/news/weeknd-re-releases-landmark-debut-mixtape-house-balloons-its-original-form-all-digital-service">  	<img src="https://cdn.shopify.com/s/files/1/0639/7575/1930/files/news3_480x480.jpg?v=1650036851" alt="" > </a>
+				<p>                 THE WEEKND RE-RELEASES LANDMARK DEBUT MIXTAPE HOUSE OF BALLOONS IN ITS ORIGINAL FORM ON ALL DIGITAL SERVICE PROVIDERS FOR 10TH ANNIVERSARY.
+</p>
+			</div>
+		</div>
+    </div>
+    
+
+
+
+<!-- 
+
+    <h2 class="section-middle">FEATURED RELEASES</h2>
+    <section class="features">
+    
+        <div class="feature1">
+            <img src="https://www.theweeknd.com/sites/g/files/aaj14676/f/styles/suzuki_breakpoints_image_tablet_sq/public/release/202201/DFM-COVER-EXPLICIT.jpg?itok=DuppFyns" height="350px" width="400px"style="position: relative; top: -1rem; margin-left: 2rem;">
+            <div class="overlay4">
+                <div class="content4">
+                        <a href="http://theweeknd.co/dawnfmWE"  style="    text-decoration: none;    "><h1> Listen </h1></a>
+                    </div>
+            </div>
+            <a class="news-feature1"> 
+    DAWN FM / 2022
+    </a> <br>
+    <div class="Listen1" >
+        <a href="http://theweeknd.co/dawnfmWE" style="    text-decoration: none;    "> 
+        Listen
+    </a>
+    </div>
+     <br>
+       </div>
+       <div class="feature2">
+           <img src="https://www.theweeknd.com/sites/g/files/aaj14676/f/styles/suzuki_breakpoints_image_mobile-lg_sq/public/release/202002/ab67616d0000b27380e1e80874a5b25317c380c5.jpg?itok=FHQGKpZl" height="350px" width="400px"style="position: relative; top: -1rem; margin-left: 1rem;">
+           <div class="overlay5">
+            <div class="content5">
+            <a href="http://theweeknd.co/afterhoursWe" style="    text-decoration: none;    ">    <h1  > Listen </h1></a>
+            </div>
+        </div>
+    <a class="news-feature2">
+    AFTERHOURS / 2020
+    </a> <br>
+    <div class="Listen2">
+        <a href="http://theweeknd.co/afterhoursWe" style="text-decoration: none;    "> 
+        Listen
+    </a>
+    </div>
+      </div>
+    
+    
+      <div class="feature3">
+       <img src="https://www.theweeknd.com/sites/g/files/aaj14676/f/styles/suzuki_breakpoints_image_mobile-lg_sq/public/release/201612/7bc60842d505753942b0cedf0e95f53074867806.jpg?itok=0e15pGAT" height="350px" width="400px"style="position: relative; top: -1rem; margin-left: -1rem;">
+       <div class="overlay6">
+         <div class="content6">
+         <a href="http://theweeknd.co/starboyWe"  style="text-decoration: none;">   <h1  href="http://theweeknd.co/starboyWe" > Listen </h1></a>
+        </div>
+    </div>
+       <a class="news-feature3">
+    Starboy / 2016
+    </a> 
+    
+    <div class="Listen3">
+        <a href="http://theweeknd.co/starboyWe" style="    text-decoration: none;    "> 
+        Listen
+    </a> -->
+
+
+</body>
+</html>
